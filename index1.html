@@ -20,7 +20,7 @@
 </style>
 <div id="map"></div>
 <script>
-	mapboxgl.accessToken = 'pk.ayJ1IjoiYWxvbmJlbmFyaSIsImEiOiJjam03NzE0dHQwMGY1M2tvNWFpYjF6YXJ4In0.tnvBEwJAYfqUtTRWy94veQ';
+	mapboxgl.accessToken = 'pk.eyJ1IjoiYWxvbmJlbmFyaSIsImEiOiJjam03NzE0dHQwMGY1M2tvNWFpYjF6YXJ4In0.tnvBEwJAYfqUtTRWy94veQ';
     var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/dark-v9',
@@ -32,11 +32,246 @@
     });
 
     map.on('load', function() {
-        map.addSource('places', {
-            'type': 'geojson',
-            'data': {"features": [{"geometry": {"coordinates": [-122.233, 40.3511], "type": "Point"}, "properties": {"description": "ReddingTH", "icon": "music"}, "type": "Feature"}], "type": "FeatureCollection"}
+        map.addSource('places', 
+        // {
+        //     'type': 'geojson',
+        //     'data': {"features": [{"geometry": {"coordinates": [-122.233, 40.3511], "type": "Point"}, "properties": {"description": "ReddingTH", "icon": "music"}, "type": "Feature"}], "type": "FeatureCollection"}
 
-        });
+        // }
+
+        {
+            'type':'geojson',
+            data:{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.29673121,
+                    38.57210783
+                ]
+            },
+            "properties": {
+                "id": "vha_612A4",
+                "name": "Sacramento VA Medical Center",
+                "icon": "music",
+                "description": "Welcome to Telehealth </br>Sacramento VA Medical Center"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.36761503,
+                    40.56453578
+                ]
+            },
+            "properties": {
+                "id": "vha_612B4",
+                "name": "Redding VA Clinic",
+                "icon": "music",
+                "description": "Welcome to Telehealth </br>Redding VA Clinic"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.27296203,
+                    37.81198104
+                ]
+            },
+            "properties": {
+                "id": "vha_612BY",
+                "name": "Oakland VA Clinic",
+                "icon": "music",
+                "description": "Welcome to Telehealth </br>Oakland VA Clinic"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.96514788,
+                    38.2676348300001
+                ]
+            },
+            "properties": {
+                "id": "vha_612GD",
+                "name": "Fairfield VA Clinic",
+                "icon": "music",
+                "description": "Welcome to Telehealth </br>Fairfield VA Clinic"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.2868141,
+                    38.1141803300001
+                ]
+            },
+            "properties": {
+                "id": "vha_612GE",
+                "name": "Mare Island VA Clinic",
+                "icon": "music",
+                "description": "Welcome to Telehealth </br>Mare Island VA Clinic"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.11172737,
+                    37.99467923
+                ]
+            },
+            "properties": {
+                "id": "vha_612GF",
+                "name": "Martinez VA Medical Center",
+                "icon": "music",
+                "description": "Welcome to Telehealth </br>Martinez VA Medical Center"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.790561,
+                    39.7304500000001
+                ]
+            },
+            "properties": {
+                "id": "vha_612GG",
+                "name": "Chico VA Clinic",
+                "icon": "music",
+                "description": "Welcome to Telehealth </br>Chico VA Clinic"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.38716917,
+                    38.66413506
+                ]
+            },
+            "properties": {
+                "id": "vha_612GH",
+                "name": "McClellan VA Clinic",
+                "icon": "music",
+                "description": "Welcome to Telehealth </br>McClellan VA Clinic"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.61385738,
+                    39.13107849
+                ]
+            },
+            "properties": {
+                "id": "vha_612GI",
+                "name": "Yuba City VA Clinic",
+                "icon": "music",
+                "description": "Welcome to Telehealth </br>Yuba City VA Clinic"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.6402541,
+                    41.7162155500001
+                ]
+            },
+            "properties": {
+                "id": "vha_612GJ",
+                "name": "Yreka VA Clinic",
+                "icon": "music",
+                "description": "Welcome to Telehealth </br>Yreka VA Clinic"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.098886,
+                    38.941542
+                ]
+            },
+            "properties": {
+                "id": "vha_612GK",
+                "name": "Sierra Foothills VA Clinic",
+                "icon": "music",
+                "description": "Welcome to Telehealth </br>Sierra Foothills VA Clinic"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.27039436,
+                    37.81046351
+                ]
+            },
+            "properties": {
+                "id": "vha_612QB",
+                "name": "Twenty First Street VA Clinic",
+                "icon": "music",
+                "description": "Welcome to Telehealth </br>Twenty First Street VA Clinic"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.38000931,
+                    40.5742167000001
+                ]
+            },
+            "properties": {
+                "id": "vha_612QC",
+                "name": "Cypress Avenue VA Clinic",
+                "icon": "music",
+                "description": "Welcome to Telehealth </br>Cypress Avenue VA Clinic"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.11654624,
+                    37.9995748600001
+                ]
+            },
+            "properties": {
+                "id": "vha_612QD",
+                "name": "Howe Road VA Clinic",
+                "icon": "music",
+                "description": "Welcome to Telehealth </br>Howe Road VA Clinic"
+            }
+        }
+    ]
+}
+        }
+        );
         // Add a layer showing the places.
         map.addLayer({
             'id': 'places',
